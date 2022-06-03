@@ -1,0 +1,3 @@
+#!/bin/sh
+crontab /cron/*
+exec /usr/bin/dumb-init crond -f
