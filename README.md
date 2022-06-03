@@ -20,6 +20,7 @@ docker run \
     --restart=always \
     --name=docker-cron \
     --env TZ=America/Toronto \
+    -v /var/run/docker.sock:/var/run/docker.sock \
     -v ./cronfile:/cron/cronfile \
     emackie/docker-cron 
 ```
